@@ -1,0 +1,168 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Container to center the content */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header and profile image styling */
+  header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height of the header */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header .profession {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+  
+  header img.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+  }
+  
+  /* Skills and contact sections styling */
+  section {
+    padding: 30px 0;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Skills and contact headings */
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* List items styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #ffcc00; /* Link color */
+  }
+  
+  ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Grid for skills section */
+  #skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  #contact ul {
+    line-height: 1.8;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    header {
+      height: 50vh;
+    }
+  
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header .profession {
+      font-size: 1.2em;
+    }
+  
+    header img.profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 1.8em;
+    }
+  
+    ul li {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      height: 40vh;
+    }
+  
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    header .profession {
+      font-size: 1em;
+    }
+  
+    header img.profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    section {
+      padding: 15px;
+    }
+  
+    section h2 {
+      font-size: 1.5em;
+    }
+  
+    ul li {
+      font-size: 0.9em;
+    }
+  }
+  
